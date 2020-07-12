@@ -5,7 +5,7 @@
     <classes>
       <class name="com.pmamhcm.PositiveTests">
         <methods>
-          <include name="assignUnassignPolicyTest"/>
+          <include name="inactivateActivateTrainingTest"/>
         </methods>
       </class> <!-- com.pmamhcm.PositiveTests -->
     </classes>
