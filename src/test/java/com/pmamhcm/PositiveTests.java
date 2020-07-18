@@ -1716,7 +1716,6 @@ sleep(2000);
 
 //End of test	
 
-
 //Beginning of test
 //View Assign Training to All Employees Demo
 
@@ -3866,7 +3865,6 @@ sleep(2000);
 
 //End of test
 
-
 //Beginning of test
 //View Message Demo
 
@@ -3935,8 +3933,821 @@ sleep(2000);
 
 //End of test
 
+//Beginning of test
+//View Demo
 
+@Test(priority = 58)
+public void viewDemoMyPagesMyFeedbackTest() {
+System.out.println("Starting viewDemoMyPagesMyFeedbackTest");
 
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Feedback
+driver.findElement(By.xpath("//a[contains(text(),'My Feedback')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 59)
+public void viewDemoMyPagesMyInfoTest() {
+System.out.println("Starting viewDemoMyPagesMyInfoTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Info
+driver.findElement(By.xpath("//a[contains(text(),'My Info')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 60)
+public void viewDemoMyPagesMySkillsTest() {
+System.out.println("Starting viewDemoMyPagesMySkillsTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Skills
+driver.findElement(By.xpath("//a[contains(text(),'My Skills')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='ImageButton2']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 61)
+public void viewDemoMyPagesMyTestTest() {
+System.out.println("Starting viewDemoMyPagesMyTestTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Test
+driver.findElement(By.xpath("//a[contains(text(),'My Test')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 62)
+public void viewDemoMyPagesMyTrainingTest() {
+System.out.println("Starting viewDemoMyPagesMyTrainingTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Training
+driver.findElement(By.xpath("//a[contains(text(),'My Training')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 63)
+public void viewDemoMyPagesRequestAdditionalTrainingTest() {
+System.out.println("Starting viewDemoMyPagesRequestAdditionalTrainingTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to Request Additional Training
+driver.findElement(By.xpath("//a[contains(text(),'Request Additional Training')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 64)
+public void viewDemoMyPagesSelectSelfAssignableTrainingTest() {
+System.out.println("Starting viewDemoMyPagesSelectSelfAssignableTrainingTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to Select Self Assignable Training
+driver.findElement(By.xpath("//a[contains(text(),'Select Self Assignable Training')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 65)
+public void viewDemoMyPagesTrainingCalendarTest() {
+System.out.println("Starting viewDemoMyPagesTrainingCalendarTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to Training Calendar
+driver.findElement(By.xpath("//li[8]//ul[1]//li[15]//a[1]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 66)
+public void viewDemoMyPagesViewAllPoliciesTest() {
+System.out.println("Starting viewDemoMyPagesViewAllPoliciesTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to View All Policies
+driver.findElement(By.xpath("//a[contains(text(),'View All Policies')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 67)
+public void viewDemoMyPagesViewOrganizationChartTest() {
+System.out.println("Starting viewDemoMyPagesViewOrganizationChartTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to View Organization Chart
+driver.findElement(By.xpath("//a[contains(text(),'View Organization Chart')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 68)
+public void viewDemoMyPagesChangePasswordTest() {
+System.out.println("Starting viewDemoMyPagesChangePasswordTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to Change Password
+driver.findElement(By.xpath("//a[contains(text(),'Change Password')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
+
+//Beginning of test
+//View Demo
+
+@Test(priority = 69)
+public void viewDemoMyPagesMyPoliciesTest() {
+System.out.println("Starting viewDemoMyPagesMyPoliciesTest");
+
+//Create driver
+System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+
+//sleep for 3 seconds
+sleep(3000);
+
+//maximize browser window
+driver.manage().window().maximize();
+
+//open test page
+driver.get("https://www.pmamhcm.com/");
+System.out.println("Page is opened.");
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//enter username
+driver.findElement(By.xpath("//div[@class='modal-header']//child::button")).click();
+Actions action = new Actions(driver);
+WebElement hoverLogin = driver.findElement(By.xpath("//div[@id='navbarDropdownLogin']"));
+action.moveToElement(hoverLogin).build().perform();
+driver.switchTo().frame(driver.findElement(By.id("frmLogin")));
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtUserName']"))).click()
+		.sendKeys("sales.demo@pmam.com").build().perform();
+
+//enter password
+action.moveToElement(driver.findElement(By.xpath("//input[@name='TxtPassword']"))).click()
+		.sendKeys("Dallas@2019").build().perform();
+
+//click login button
+action.moveToElement(driver.findElement(By.xpath("//input[@name='btnNewLogin']"))).click().build().perform();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Pages
+driver.findElement(By.xpath("//a[contains(text(),'My Pages')]")).click();
+
+//sleep for 2 seconds
+sleep(2000);
+
+//go to My Policies
+driver.findElement(By.xpath("//a[contains(text(),'My Policies')]")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//view demo
+driver.findElement(By.xpath("//input[@id='imgViewDemo']")).click();
+
+//sleep for 2 seconds		
+sleep(2000);
+
+//Close browser
+	driver.quit();
+
+}
+
+//End of test
 
 	private void sleep(long m) {
 		try {
